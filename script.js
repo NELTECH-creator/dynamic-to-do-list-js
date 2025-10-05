@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create a remove button for the task
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.className = 'remove-btn';
+
+        // Use classList.add() to assign the button's class
+        removeButton.classList.add('remove-btn');
 
         // Add functionality to remove the task when the button is clicked
         removeButton.onclick = function() {
@@ -51,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Optional — invoke addTask on DOMContentLoaded (not required to prefill, but per instruction)
-    // You can leave this empty if no default tasks are needed
-    // addTask(); // Uncomment if you plan to add default behavior
+    // (Optional) Function call when page loads if needed
+    // addTask(); // Uncomment if default tasks are to be added
 });
+// Note: The above code implements a dynamic to-do list where users can add and remove tasks.
